@@ -1,0 +1,294 @@
+2026-01-23 10:47:54,823 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 10:47:57,453 | INFO | Parámetros | fecha_inicio=2026-01-16 | fecha_fin=2026-01-22 | Procesamiento=Automatico
+2026-01-23 10:47:57,454 | INFO | Extrayendo información
+2026-01-23 10:48:03,101 | INFO | Aplicando transformación a data
+2026-01-23 10:48:03,146 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 10:48:03,629 | ERROR | Error durante la ejecución del proceso
+Traceback (most recent call last):
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 2118, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'Comercial.dbo.Ind_Op_Preventa_Escaneo', column 'Quincena'. Truncated value: 'Qna '. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<ipython-input-8-738f9f19c60a>", line 49, in main
+    load_ind_op(df_ind_op=df_ind_op,quincenas_delete=quincenas_delete)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ingedatos\OneDrive - EMBOTELLADORA LAS MARGARITAS S A P I DE CV\Documentos\0. Python\30 - Ind_Op_Preventa_Escaneo\src\load.py", line 6, in load_ind_op
+    db.insert_delete(df=df_ind_op,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+                     alias=f'DA4-Comercial',
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+                     table_name='Ind_Op_Preventa_Escaneo',
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                     schema='dbo',
+                     ^^^^^^^^^^^^^
+                     where_clause=f"Quincena IN ({quincenas_delete})")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ingedatos\OneDrive - EMBOTELLADORA LAS MARGARITAS S A P I DE CV\Documentos\0. Python\DAToolKit\Clases\Conexión.py", line 133, in insert_delete
+    chunk.to_sql(
+    ~~~~~~~~~~~~^
+        name=table_name,
+        ^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        index=False
+        ^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\core\generic.py", line 3109, in to_sql
+    return sql.to_sql(
+           ~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<8 lines>...
+        method=method,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\io\sql.py", line 844, in to_sql
+    return pandas_sql.to_sql(
+           ~~~~~~~~~~~~~~~~~^
+        frame,
+        ^^^^^^
+    ...<9 lines>...
+        **engine_kwargs,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\io\sql.py", line 2030, in to_sql
+    total_inserted = sql_engine.insert_records(
+        table=table,
+    ...<7 lines>...
+        **engine_kwargs,
+    )
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\io\sql.py", line 1579, in insert_records
+    raise err
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\io\sql.py", line 1570, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\io\sql.py", line 1121, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\io\sql.py", line 1012, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1844, in _execute_context
+    return self._exec_insertmany_context(dialect, context)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 2126, in _exec_insertmany_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e,
+        ^^
+    ...<4 lines>...
+        is_sub_exec=True,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 2118, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]String or binary data would be truncated in table 'Comercial.dbo.Ind_Op_Preventa_Escaneo', column 'Quincena'. Truncated value: 'Qna '. (2628) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: INSERT INTO dbo.[Ind_Op_Preventa_Escaneo] ([Centro], [Modelo_ruta], [Ruta_preventa], [Solicitante], [Visitado], [Fecha_operacion], [Anio], [Mes], [Quincena], [Num_Eq_Cte], [Escaneo_refri], [Motivo_No_Escaneo]) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ... 6477 characters truncated ...  ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('1121', 'Preventa', 'P008', '0001124042', '1', datetime.datetime(2026, 1, 22, 0, 0), 2026, 'Ene', 'Qna 2', '1', 0, '', '1111', 'Preventa', 'P003', '0001027510', '1', datetime.datetime(2026, 1, 22, 0, 0), 2026, 'Ene', 'Qna 2', '1', 1, '', '1111', 'Preventa', 'P062', '0001124092', '1', datetime.datetime(2026, 1, 22, 0, 0), 2026, 'Ene', 'Qna 2', '1', 1, '', '1130', 'Preventa', 'P076', '0001105895', '1', datetime.datetime(2026, 1, 22, 0, 0), 2026, 'Ene', 'Qna 2', '1', 0, '', '1133', 'Preventa' ... 1988 parameters truncated ... 0, '', '1211', 'Preventa', 'P090', '0001056475', '1', datetime.datetime(2026, 1, 22, 0, 0), 2026, 'Ene', 'Qna 2', '2', 0, '', '1111', 'Preventa', 'P002', '0001118113', '1', datetime.datetime(2026, 1, 22, 0, 0), 2026, 'Ene', 'Qna 2', '1', 0, '', '1130', 'Preventa', 'P075', '0001046705', '1', datetime.datetime(2026, 1, 22, 0, 0), 2026, 'Ene', 'Qna 2', '2', 0, '', '1111', 'Demostra', 'P160', '0001189165', '1', datetime.datetime(2026, 1, 22, 0, 0), 2026, 'Ene', 'Qna 2', '7', 0, '')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-23 10:49:24,235 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 10:49:35,362 | INFO | Parámetros | fecha_inicio=2026-01-16 | fecha_fin=2026-01-22 | Procesamiento=Automatico
+2026-01-23 10:49:35,365 | INFO | Extrayendo información
+2026-01-23 10:49:57,061 | INFO | Aplicando transformación a data
+2026-01-23 10:49:57,142 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 10:50:27,540 | INFO | Proceso finalizado correctamente
+2026-01-23 11:49:54,564 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 11:49:54,565 | INFO | Parámetros | fecha_inicio=2026-01-01 | fecha_fin=2026-01-15 | Procesamiento=Manual
+2026-01-23 11:49:54,567 | INFO | Extrayendo información
+2026-01-23 11:49:59,787 | INFO | Aplicando transformación a data
+2026-01-23 11:49:59,830 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 11:50:27,984 | INFO | Proceso finalizado correctamente
+2026-01-23 11:53:33,299 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 11:53:33,300 | INFO | Parámetros | fecha_inicio=2025-01-01 | fecha_fin=2025-01-15 | Procesamiento=Manual
+2026-01-23 11:53:33,302 | INFO | Extrayendo información
+2026-01-23 11:53:49,876 | INFO | Aplicando transformación a data
+2026-01-23 11:53:49,921 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 11:54:08,650 | INFO | Proceso finalizado correctamente
+2026-01-23 12:18:18,337 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 12:18:18,338 | INFO | Parámetros | fecha_inicio=2025-01-16 | fecha_fin=2025-01-16 | Procesamiento=Manual
+2026-01-23 12:18:18,339 | INFO | Extrayendo información
+2026-01-23 12:18:23,269 | INFO | Aplicando transformación a data
+2026-01-23 12:18:23,320 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 12:18:44,330 | INFO | Proceso finalizado correctamente
+2026-01-23 12:21:16,783 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 12:21:16,784 | INFO | Parámetros | fecha_inicio=2025-01-01 | fecha_fin=2025-01-01 | Procesamiento=Manual
+2026-01-23 12:21:16,786 | INFO | Extrayendo información
+2026-01-23 12:21:19,020 | INFO | Aplicando transformación a data
+2026-01-23 12:21:19,023 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 12:21:19,205 | INFO | Proceso finalizado correctamente
+2026-01-23 12:22:28,592 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 12:22:28,594 | INFO | Parámetros | fecha_inicio=2025-01-01 | fecha_fin=2025-01-01 | Procesamiento=Manual
+2026-01-23 12:22:28,595 | INFO | Extrayendo información
+2026-01-23 12:22:30,850 | INFO | Aplicando transformación a data
+2026-01-23 12:22:30,854 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 12:22:31,038 | INFO | Proceso finalizado correctamente
+2026-01-23 12:24:29,159 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 12:24:29,160 | INFO | Parámetros | fecha_inicio=2025-01-01 | fecha_fin=2025-01-15 | Procesamiento=Manual
+2026-01-23 12:24:29,161 | INFO | Extrayendo información
+2026-01-23 12:24:29,162 | ERROR | Error durante la ejecución del proceso
+Traceback (most recent call last):
+  File "<ipython-input-6-58e2c96d3c34>", line 44, in main
+    if fecha_fin.day >= 16:
+       ^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'day'
+2026-01-23 12:24:49,152 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 12:24:49,154 | INFO | Parámetros | fecha_inicio=2025-01-01 | fecha_fin=2025-01-15 | Procesamiento=Manual
+2026-01-23 12:24:49,155 | INFO | Extrayendo información
+2026-01-23 12:24:52,756 | INFO | Aplicando transformación a data
+2026-01-23 12:24:52,800 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 12:25:10,762 | INFO | Proceso finalizado correctamente
+2026-01-23 12:27:22,788 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 12:27:22,790 | INFO | Parámetros | fecha_inicio=2025-01-01 | fecha_fin=2025-01-15 | Procesamiento=Manual
+2026-01-23 12:27:22,791 | INFO | Extrayendo información
+2026-01-23 12:27:33,099 | INFO | Aplicando transformación a data
+2026-01-23 12:27:33,146 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 12:27:54,146 | INFO | Proceso finalizado correctamente
+2026-01-23 12:28:08,118 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 12:28:08,121 | INFO | Parámetros | fecha_inicio=2025-01-01 | fecha_fin=2025-01-15 | Procesamiento=Manual
+2026-01-23 12:28:08,122 | INFO | Extrayendo información
+2026-01-23 12:28:11,484 | INFO | Aplicando transformación a data
+2026-01-23 12:28:11,532 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 12:28:32,432 | INFO | Proceso finalizado correctamente
+2026-01-23 12:28:35,164 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 12:28:35,165 | INFO | Parámetros | fecha_inicio=2025-01-01 | fecha_fin=2025-01-15 | Procesamiento=Manual
+2026-01-23 12:28:35,170 | INFO | Extrayendo información
+2026-01-23 12:28:38,470 | INFO | Aplicando transformación a data
+2026-01-23 12:28:38,512 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 12:28:59,067 | INFO | Proceso finalizado correctamente
+2026-01-23 12:30:14,917 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 12:30:14,919 | INFO | Parámetros | fecha_inicio=2025-01-01 | fecha_fin=2025-01-15 | Procesamiento=Manual
+2026-01-23 12:30:14,923 | INFO | Extrayendo información
+2026-01-23 12:30:19,698 | INFO | Aplicando transformación a data
+2026-01-23 12:30:19,773 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 12:30:41,691 | INFO | Proceso finalizado correctamente
+2026-01-23 12:51:41,541 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 12:51:41,543 | INFO | Parámetros | fecha_inicio=2025-01-01 | fecha_fin=2025-01-15 | Procesamiento=Manual
+2026-01-23 12:51:41,544 | INFO | Extrayendo información
+2026-01-23 12:51:45,189 | INFO | Aplicando transformación a data
+2026-01-23 12:51:45,237 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 12:52:06,542 | INFO | Proceso finalizado correctamente
+2026-01-23 12:52:30,168 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 12:52:30,169 | INFO | Parámetros | fecha_inicio=2025-01-16 | fecha_fin=2025-01-31 | Procesamiento=Manual
+2026-01-23 12:52:30,171 | INFO | Extrayendo información
+2026-01-23 12:52:35,532 | INFO | Aplicando transformación a data
+2026-01-23 12:52:35,625 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 12:52:57,725 | INFO | Proceso finalizado correctamente
+2026-01-23 13:47:33,764 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 13:47:33,766 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-23 13:47:33,768 | INFO | Extrayendo información
+2026-01-23 13:47:37,697 | INFO | Aplicando transformación a data
+2026-01-23 13:47:37,744 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 13:47:45,856 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 13:47:45,861 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-23 13:47:45,863 | INFO | Extrayendo información
+2026-01-23 13:47:49,218 | INFO | Aplicando transformación a data
+2026-01-23 13:47:49,268 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 13:47:55,557 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 13:47:55,562 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-23 13:47:55,564 | INFO | Extrayendo información
+2026-01-23 13:47:59,063 | INFO | Aplicando transformación a data
+2026-01-23 13:47:59,108 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 13:48:34,833 | INFO | Proceso finalizado correctamente
+2026-01-23 13:49:32,507 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 13:49:32,510 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-23 13:49:32,511 | INFO | Extrayendo información
+2026-01-23 13:49:38,202 | INFO | Aplicando transformación a data
+2026-01-23 13:49:38,254 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 13:50:01,015 | INFO | Proceso finalizado correctamente
+2026-01-23 13:55:32,350 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 13:55:32,355 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-23 13:55:32,356 | INFO | Extrayendo información
+2026-01-23 13:55:36,829 | INFO | Aplicando transformación a data
+2026-01-23 13:55:36,880 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 13:55:58,522 | INFO | Proceso finalizado correctamente
+2026-01-23 13:56:21,906 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 13:56:21,908 | INFO | Parámetros | fecha_inicio=2025-12-15 | fecha_fin=2025-12-01 | Procesamiento=Manual
+2026-01-23 13:56:21,909 | INFO | Extrayendo información
+2026-01-23 13:56:22,044 | INFO | Aplicando transformación a data
+2026-01-23 13:56:22,047 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 13:56:22,156 | INFO | Proceso finalizado correctamente
+2026-01-23 13:56:55,048 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 13:56:55,056 | INFO | Parámetros | fecha_inicio=2025-12-15 | fecha_fin=2025-12-01 | Procesamiento=Manual
+2026-01-23 13:56:55,057 | INFO | Extrayendo información
+2026-01-23 13:56:55,262 | INFO | Aplicando transformación a data
+2026-01-23 13:56:55,265 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 13:56:55,375 | INFO | Proceso finalizado correctamente
+2026-01-23 13:58:34,228 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 13:58:34,230 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-23 13:58:34,231 | INFO | Extrayendo información
+2026-01-23 13:58:39,877 | INFO | Aplicando transformación a data
+2026-01-23 13:58:39,922 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 13:59:12,575 | INFO | Proceso finalizado correctamente
+2026-01-23 13:59:35,145 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 13:59:35,147 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-23 13:59:35,149 | INFO | Extrayendo información
+2026-01-23 13:59:38,710 | INFO | Aplicando transformación a data
+2026-01-23 13:59:38,759 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 13:59:59,152 | INFO | Proceso finalizado correctamente
+2026-01-23 14:01:03,552 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 14:01:03,557 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-23 14:01:03,558 | INFO | Extrayendo información
+2026-01-23 14:01:07,206 | INFO | Aplicando transformación a data
+2026-01-23 14:01:07,249 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 14:01:28,503 | INFO | Proceso finalizado correctamente
+2026-01-23 14:03:46,400 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 14:03:46,401 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-23 14:03:46,402 | INFO | Extrayendo información
+2026-01-23 14:03:50,642 | INFO | Aplicando transformación a data
+2026-01-23 14:03:50,694 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 14:04:16,282 | INFO | Proceso finalizado correctamente
+2026-01-23 14:05:25,617 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-23 14:05:25,619 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-23 14:05:25,624 | INFO | Extrayendo información
+2026-01-23 14:05:30,280 | INFO | Aplicando transformación a data
+2026-01-23 14:05:30,413 | INFO | Cargando información a RDA4-Comercial
+2026-01-23 14:05:52,223 | INFO | Proceso finalizado correctamente

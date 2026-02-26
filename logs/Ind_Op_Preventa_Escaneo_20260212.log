@@ -1,0 +1,12 @@
+2026-02-12 14:03:27,801 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-02-12 14:03:27,802 | INFO | Parámetros | fecha_inicio=2026-01-16 | fecha_fin=2026-01-31 | Procesamiento=Manual
+2026-02-12 14:03:27,803 | INFO | Extrayendo información
+2026-02-12 14:03:50,861 | INFO | Aplicando transformación a data
+2026-02-12 14:03:50,910 | INFO | Cargando información a RDA4-Comercial
+2026-02-12 14:03:59,344 | INFO | Proceso finalizado correctamente
+2026-02-12 14:04:19,300 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-02-12 14:04:19,302 | INFO | Parámetros | fecha_inicio=2026-02-01 | fecha_fin=2026-02-11 | Procesamiento=Manual
+2026-02-12 14:04:19,303 | INFO | Extrayendo información
+2026-02-12 14:04:22,938 | INFO | Aplicando transformación a data
+2026-02-12 14:04:22,981 | INFO | Cargando información a RDA4-Comercial
+2026-02-12 14:04:32,735 | INFO | Proceso finalizado correctamente

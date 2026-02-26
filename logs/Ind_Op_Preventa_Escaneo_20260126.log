@@ -1,0 +1,671 @@
+2026-01-26 09:34:33,334 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 09:34:33,336 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-26 09:34:33,337 | INFO | Extrayendo información
+2026-01-26 09:34:43,307 | INFO | Aplicando transformación a data
+2026-01-26 09:34:43,396 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 09:34:53,691 | INFO | Proceso finalizado correctamente
+2026-01-26 09:38:41,139 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 09:38:41,141 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-26 09:38:41,143 | INFO | Extrayendo información
+2026-01-26 09:38:44,041 | INFO | Aplicando transformación a data
+2026-01-26 09:38:44,088 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 09:38:53,762 | INFO | Proceso finalizado correctamente
+2026-01-26 09:39:17,487 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 09:39:17,489 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-26 09:39:17,490 | INFO | Extrayendo información
+2026-01-26 09:39:23,980 | INFO | Aplicando transformación a data
+2026-01-26 09:39:24,029 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 09:39:36,479 | INFO | Proceso finalizado correctamente
+2026-01-26 09:39:41,828 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 09:39:41,829 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-26 09:39:41,831 | INFO | Extrayendo información
+2026-01-26 09:39:45,418 | INFO | Aplicando transformación a data
+2026-01-26 09:39:45,466 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 09:39:54,954 | INFO | Proceso finalizado correctamente
+2026-01-26 09:40:09,605 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 09:40:09,606 | INFO | Parámetros | fecha_inicio=2026-01-01 | fecha_fin=2026-01-15 | Procesamiento=Manual
+2026-01-26 09:40:09,607 | INFO | Extrayendo información
+2026-01-26 09:40:12,780 | INFO | Aplicando transformación a data
+2026-01-26 09:40:12,840 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 09:40:21,839 | INFO | Proceso finalizado correctamente
+2026-01-26 09:40:32,293 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 09:40:32,295 | ERROR | Error durante la ejecución del proceso
+Traceback (most recent call last):
+  File "<ipython-input-6-5be65fc7a09b>", line 27, in main
+    fecha_fin = get_fecha_fin ()
+TypeError: get_fecha_fin() missing 2 required positional arguments: 'anio' and 'mes_num'
+2026-01-26 09:40:36,729 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 09:40:36,730 | ERROR | Error durante la ejecución del proceso
+Traceback (most recent call last):
+  File "<ipython-input-7-5be65fc7a09b>", line 27, in main
+    fecha_fin = get_fecha_fin ()
+TypeError: get_fecha_fin() missing 2 required positional arguments: 'anio' and 'mes_num'
+2026-01-26 09:44:01,408 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 09:44:01,409 | ERROR | Error durante la ejecución del proceso
+Traceback (most recent call last):
+  File "<ipython-input-8-ea97fd6bf626>", line 30, in main
+    fecha_fin = get_fecha_fin (anio_fin=anio_fin, mes_num_fin=mes_num)
+                                                              ^^^^^^^
+UnboundLocalError: cannot access local variable 'mes_num' where it is not associated with a value
+2026-01-26 09:44:10,461 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 09:44:10,496 | ERROR | Error durante la ejecución del proceso
+Traceback (most recent call last):
+  File "<ipython-input-1-ea97fd6bf626>", line 30, in main
+    fecha_fin = get_fecha_fin (anio_fin=anio_fin, mes_num_fin=mes_num)
+                                                              ^^^^^^^
+UnboundLocalError: cannot access local variable 'mes_num' where it is not associated with a value
+2026-01-26 09:44:52,100 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 09:44:54,075 | INFO | Parámetros | fecha_inicio=2026-01-16 | fecha_fin=2026-01-25 | Procesamiento=Automatico
+2026-01-26 09:44:54,077 | INFO | Extrayendo información
+2026-01-26 09:44:58,058 | INFO | Aplicando transformación a data
+2026-01-26 09:44:58,105 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 09:45:14,346 | INFO | Proceso finalizado correctamente
+2026-01-26 11:56:35,901 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 11:56:35,904 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-26 11:56:35,905 | INFO | Extrayendo información
+2026-01-26 11:56:40,896 | INFO | Aplicando transformación a data
+2026-01-26 11:56:40,940 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 11:56:48,730 | INFO | Proceso finalizado correctamente
+2026-01-26 11:56:57,423 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 11:56:57,424 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-26 11:56:57,426 | INFO | Extrayendo información
+2026-01-26 11:57:08,051 | INFO | Aplicando transformación a data
+2026-01-26 11:57:08,109 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 11:57:17,521 | INFO | Proceso finalizado correctamente
+2026-01-26 11:58:00,358 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 11:58:00,391 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-26 11:58:00,392 | INFO | Extrayendo información
+2026-01-26 11:58:00,773 | ERROR | Error durante la ejecución del proceso
+Traceback (most recent call last):
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'consulta.Escaneo_refri' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<ipython-input-1-21ce4b4c4fea>", line 53, in main
+    df_ind_op = get_ind_op_primer_quincena (fecha_inicio=fecha_inicio, fecha_fin=fecha_fin)
+  File "c:\Users\ingedatos\OneDrive - EMBOTELLADORA LAS MARGARITAS S A P I DE CV\Documentos\0. Python\30 - Ind_Op_Preventa_Escaneo\src\extract.py", line 87, in get_ind_op_primer_quincena
+    df_ind_op = pd.read_sql(query_ind_op,
+                              db.get_engine('DA2-Comercial'),
+                              dtype_backend='pyarrow')
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        sql,
+        ^^^^
+    ...<6 lines>...
+        dtype=dtype,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\io\sql.py", line 1671, in execute
+    return self.con.exec_driver_sql(sql, *args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1779, in exec_driver_sql
+    ret = self._execute_context(
+        dialect,
+    ...<5 lines>...
+        distilled_parameters,
+    )
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'consulta.Escaneo_refri' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)")
+[SQL: 
+      WITH consulta AS (
+      	SELECT 
+      	  LTRIM(RTRIM([Centro])) AS [Centro]
+      	  ,LTRIM(RTRIM([Modelo_ruta])) AS [Modelo_ruta]
+          ,CONCAT ('P',LTRIM(RTRIM([Ruta_preventa]))) AS [Ruta_preventa]
+      		,RIGHT(REPLICATE('0', 10) + CAST([Solicitante] AS VARCHAR(10)), 10) AS [Solicitante]
+          ,LTRIM(RTRIM([Visitado])) AS [Visitado]
+      		,[Fecha_operacion]
+      	  ,YEAR (Fecha_operacion) AS Anio
+      	   , CASE 
+      	    	WHEN MONTH (Fecha_operacion) = 1 THEN 'Ene'
+      	    	WHEN MONTH (Fecha_operacion) = 2 THEN 'Feb'
+      	    	WHEN MONTH (Fecha_operacion) = 3 THEN 'Mar'
+      	    	WHEN MONTH (Fecha_operacion) = 4 THEN 'Abr'
+      	    	WHEN MONTH (Fecha_operacion) = 5 THEN 'May'
+      	    	WHEN MONTH (Fecha_operacion) = 6 THEN 'Jun'
+      	    	WHEN MONTH (Fecha_operacion) = 7 THEN 'Jul'
+      	    	WHEN MONTH (Fecha_operacion) = 8 THEN 'Ago'
+      	    	WHEN MONTH (Fecha_operacion) = 9 THEN 'Sep'
+      	    	WHEN MONTH (Fecha_operacion) = 10 THEN 'Oct'
+      	    	WHEN MONTH (Fecha_operacion) = 11 THEN 'Nov'
+      	    	WHEN MONTH (Fecha_operacion) = 12 THEN 'Dic'
+      	   	END AS [Mes]
+          ,LTRIM(RTRIM([Num_Eq_Cte])) AS [Num_Eq_Cte]
+          ,SUM ([Escaneo_refri]) AS [Escaneo_refri]
+          ,CASE
+      			WHEN [Motivo_No_Escaneo] IS NULL THEN ''
+      			ELSE [Motivo_No_Escaneo]
+      	   END AS [Motivo_No_Escaneo]
+      	FROM [Comercial].[dbo].[Ind_Op]
+          WHERE Tipo_conexion = 'Salesforce Preventa' AND [Geolocalizacion] = 'En Cliente' AND Fecha_operacion BETWEEN '2025-12-01' AND '2025-12-15'
+          GROUP BY [Centro], [Modelo_ruta] ,[Ruta_preventa], [Solicitante], [Visitado], [Fecha_operacion], [Num_Eq_Cte], [Motivo_No_Escaneo], [Check_cierre_ruta]
+
+      ), consulta_agrupada AS (
+
+        SELECT
+        	[Centro]
+        	,[Modelo_ruta]
+            ,[Ruta_preventa]
+            ,[Solicitante]
+            ,[Visitado]
+        	,[Anio]
+        	,[Mes]
+        	,[Num_Eq_Cte]
+        	,[Escaneo_refri]
+        	,[Motivo_No_Escaneo]
+            ,ROW_NUMBER() OVER (
+				PARTITION BY [Solicitante]
+					ORDER BY [Escaneo_refri] DESC
+			) AS rn
+        FROM consulta
+        GROUP BY [Centro], [Modelo_ruta], [Ruta_preventa], [Solicitante], [Visitado], [Anio], [Mes], [Num_Eq_Cte], [Motivo_No_Escaneo]
+
+      )
+
+      SELECT
+      	[Centro]
+      	,[Modelo_ruta]
+          ,[Ruta_preventa]
+          ,[Solicitante]
+          ,[Visitado]
+      	,(SELECT 
+      	      CONVERT(date, MAX(Fecha_operacion)) AS UltimaFecha
+            FROM [Comercial].[dbo].[Ind_Op]
+      	  WHERE Tipo_conexion = 'Salesforce Preventa' AND Fecha_operacion BETWEEN '2025-12-01' AND '2025-12-15'
+      	  ) AS [Fecha_operacion]
+      	,[Anio]
+      	,[Mes]
+      	,[Num_Eq_Cte]
+      	,SUM ([Escaneo_refri]) AS [Escaneo_refri]
+      	,[Motivo_No_Escaneo]
+      FROM consulta_agrupada
+      WHERE rn = 1
+      GROUP BY [Centro], [Modelo_ruta], [Ruta_preventa], [Solicitante], [Visitado], [Anio], [Mes], [Num_Eq_Cte], [Motivo_No_Escaneo]
+
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-26 11:59:31,104 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 11:59:31,138 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-26 11:59:31,139 | INFO | Extrayendo información
+2026-01-26 11:59:37,689 | INFO | Aplicando transformación a data
+2026-01-26 11:59:37,773 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 11:59:50,278 | INFO | Proceso finalizado correctamente
+2026-01-26 12:00:40,343 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 12:00:40,345 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-26 12:00:40,346 | INFO | Extrayendo información
+2026-01-26 12:00:40,434 | ERROR | Error durante la ejecución del proceso
+Traceback (most recent call last):
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ','. (102) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<ipython-input-2-080fd712038f>", line 50, in main
+    df_ind_op = get_ind_op_segunda_quincena (anio=anio, mes_num=mes_num)
+  File "c:\Users\ingedatos\OneDrive - EMBOTELLADORA LAS MARGARITAS S A P I DE CV\Documentos\0. Python\30 - Ind_Op_Preventa_Escaneo\src\extract.py", line 174, in get_ind_op_segunda_quincena
+    df_ind_op = pd.read_sql(query_ind_op,
+                              db.get_engine('DA2-Comercial'),
+                              dtype_backend='pyarrow')
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        sql,
+        ^^^^
+    ...<6 lines>...
+        dtype=dtype,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\io\sql.py", line 1671, in execute
+    return self.con.exec_driver_sql(sql, *args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1779, in exec_driver_sql
+    ret = self._execute_context(
+        dialect,
+    ...<5 lines>...
+        distilled_parameters,
+    )
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ','. (102) (SQLExecDirectW)")
+[SQL: 
+            WITH consulta AS (
+            	SELECT 
+            	  LTRIM(RTRIM([Centro])) AS [Centro]
+            	  ,LTRIM(RTRIM([Modelo_ruta])) AS [Modelo_ruta]
+                ,CONCAT ('P',LTRIM(RTRIM([Ruta_preventa]))) AS [Ruta_preventa]
+            		,RIGHT(REPLICATE('0', 10) + CAST([Solicitante] AS VARCHAR(10)), 10) AS [Solicitante]
+                ,LTRIM(RTRIM([Visitado])) AS [Visitado]
+            		,[Fecha_operacion]
+            	  ,YEAR (Fecha_operacion) AS Anio
+            	   , CASE 
+            	    	WHEN MONTH (Fecha_operacion) = 1 THEN 'Ene'
+            	    	WHEN MONTH (Fecha_operacion) = 2 THEN 'Feb'
+            	    	WHEN MONTH (Fecha_operacion) = 3 THEN 'Mar'
+            	    	WHEN MONTH (Fecha_operacion) = 4 THEN 'Abr'
+            	    	WHEN MONTH (Fecha_operacion) = 5 THEN 'May'
+            	    	WHEN MONTH (Fecha_operacion) = 6 THEN 'Jun'
+            	    	WHEN MONTH (Fecha_operacion) = 7 THEN 'Jul'
+            	    	WHEN MONTH (Fecha_operacion) = 8 THEN 'Ago'
+            	    	WHEN MONTH (Fecha_operacion) = 9 THEN 'Sep'
+            	    	WHEN MONTH (Fecha_operacion) = 10 THEN 'Oct'
+            	    	WHEN MONTH (Fecha_operacion) = 11 THEN 'Nov'
+            	    	WHEN MONTH (Fecha_operacion) = 12 THEN 'Dic'
+            	   	END AS [Mes]
+                ,LTRIM(RTRIM([Num_Eq_Cte])) AS [Num_Eq_Cte]
+                ,SUM ([Escaneo_refri]) AS [Escaneo_refri]
+                ,CASE
+            			WHEN [Motivo_No_Escaneo] IS NULL THEN ''
+            			ELSE [Motivo_No_Escaneo]
+            	   END AS [Motivo_No_Escaneo]
+            	FROM [Comercial].[dbo].[Ind_Op]
+                WHERE Tipo_conexion = 'Salesforce Preventa' AND YEAR(Fecha_operacion) = 2025 AND MONTH(Fecha_operacion) = 12
+                GROUP BY [Centro], [Modelo_ruta] ,[Ruta_preventa], [Solicitante], [Visitado], [Fecha_operacion], [Num_Eq_Cte], [Motivo_No_Escaneo], [Check_cierre_ruta]
+
+            ), consulta_agrupada AS (
+
+              SELECT
+              	[Centro]
+              	,[Modelo_ruta]
+                  ,[Ruta_preventa]
+                  ,[Solicitante]
+                  ,[Visitado]
+              	,[Anio]
+              	,[Mes]
+              	,[Num_Eq_Cte]
+              	,[Escaneo_refri])
+              	,[Motivo_No_Escaneo]
+                ,ROW_NUMBER() OVER (
+				    PARTITION BY [Solicitante]
+					    ORDER BY [Escaneo_refri] DESC
+			    ) AS rn
+              FROM consulta
+              GROUP BY [Centro], [Modelo_ruta], [Ruta_preventa], [Solicitante], [Visitado], [Anio], [Mes], [Num_Eq_Cte], [Escaneo_refri], [Motivo_No_Escaneo]
+
+            )
+
+            SELECT
+            	[Centro]
+            	,[Modelo_ruta]
+                ,[Ruta_preventa]
+                ,[Solicitante]
+                ,[Visitado]
+            	,(SELECT 
+            	      CONVERT(date, MAX(Fecha_operacion)) AS UltimaFecha
+                  FROM [Comercial].[dbo].[Ind_Op]
+            	  WHERE Tipo_conexion = 'Salesforce Preventa' AND YEAR(Fecha_operacion) = 2025 AND MONTH(Fecha_operacion) = 12
+            	  ) AS [Fecha_operacion]
+            	,[Anio]
+            	,[Mes]
+            	,[Num_Eq_Cte]
+            	,SUM ([Escaneo_refri]) AS [Escaneo_refri]
+            	,[Motivo_No_Escaneo]
+            FROM consulta_agrupada
+            WHERE rn = 1
+            GROUP BY [Centro], [Modelo_ruta], [Ruta_preventa], [Solicitante], [Visitado], [Anio], [Mes], [Num_Eq_Cte], [Motivo_No_Escaneo]
+
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-26 12:03:40,366 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 12:03:40,368 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-26 12:03:40,370 | INFO | Extrayendo información
+2026-01-26 12:03:43,321 | INFO | Aplicando transformación a data
+2026-01-26 12:03:43,368 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 12:03:51,476 | INFO | Proceso finalizado correctamente
+2026-01-26 12:04:12,530 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 12:04:12,532 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-26 12:04:12,566 | INFO | Extrayendo información
+2026-01-26 12:04:12,709 | ERROR | Error durante la ejecución del proceso
+Traceback (most recent call last):
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ','. (102) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<ipython-input-2-080fd712038f>", line 50, in main
+    df_ind_op = get_ind_op_segunda_quincena (anio=anio, mes_num=mes_num)
+  File "c:\Users\ingedatos\OneDrive - EMBOTELLADORA LAS MARGARITAS S A P I DE CV\Documentos\0. Python\30 - Ind_Op_Preventa_Escaneo\src\extract.py", line 174, in get_ind_op_segunda_quincena
+    df_ind_op = pd.read_sql(query_ind_op,
+                              db.get_engine('DA2-Comercial'),
+                              dtype_backend='pyarrow')
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        sql,
+        ^^^^
+    ...<6 lines>...
+        dtype=dtype,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "c:\ProgramData\anaconda3\Lib\site-packages\pandas\io\sql.py", line 1671, in execute
+    return self.con.exec_driver_sql(sql, *args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1779, in exec_driver_sql
+    ret = self._execute_context(
+        dialect,
+    ...<5 lines>...
+        distilled_parameters,
+    )
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\ProgramData\anaconda3\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ','. (102) (SQLExecDirectW)")
+[SQL: 
+            WITH consulta AS (
+            	SELECT 
+            	  LTRIM(RTRIM([Centro])) AS [Centro]
+            	  ,LTRIM(RTRIM([Modelo_ruta])) AS [Modelo_ruta]
+                ,CONCAT ('P',LTRIM(RTRIM([Ruta_preventa]))) AS [Ruta_preventa]
+            		,RIGHT(REPLICATE('0', 10) + CAST([Solicitante] AS VARCHAR(10)), 10) AS [Solicitante]
+                ,LTRIM(RTRIM([Visitado])) AS [Visitado]
+            		,[Fecha_operacion]
+            	  ,YEAR (Fecha_operacion) AS Anio
+            	   , CASE 
+            	    	WHEN MONTH (Fecha_operacion) = 1 THEN 'Ene'
+            	    	WHEN MONTH (Fecha_operacion) = 2 THEN 'Feb'
+            	    	WHEN MONTH (Fecha_operacion) = 3 THEN 'Mar'
+            	    	WHEN MONTH (Fecha_operacion) = 4 THEN 'Abr'
+            	    	WHEN MONTH (Fecha_operacion) = 5 THEN 'May'
+            	    	WHEN MONTH (Fecha_operacion) = 6 THEN 'Jun'
+            	    	WHEN MONTH (Fecha_operacion) = 7 THEN 'Jul'
+            	    	WHEN MONTH (Fecha_operacion) = 8 THEN 'Ago'
+            	    	WHEN MONTH (Fecha_operacion) = 9 THEN 'Sep'
+            	    	WHEN MONTH (Fecha_operacion) = 10 THEN 'Oct'
+            	    	WHEN MONTH (Fecha_operacion) = 11 THEN 'Nov'
+            	    	WHEN MONTH (Fecha_operacion) = 12 THEN 'Dic'
+            	   	END AS [Mes]
+                ,LTRIM(RTRIM([Num_Eq_Cte])) AS [Num_Eq_Cte]
+                ,SUM ([Escaneo_refri]) AS [Escaneo_refri]
+                ,CASE
+            			WHEN [Motivo_No_Escaneo] IS NULL THEN ''
+            			ELSE [Motivo_No_Escaneo]
+            	   END AS [Motivo_No_Escaneo]
+            	FROM [Comercial].[dbo].[Ind_Op]
+                WHERE Tipo_conexion = 'Salesforce Preventa' AND YEAR(Fecha_operacion) = 2025 AND MONTH(Fecha_operacion) = 12
+                GROUP BY [Centro], [Modelo_ruta] ,[Ruta_preventa], [Solicitante], [Visitado], [Fecha_operacion], [Num_Eq_Cte], [Motivo_No_Escaneo], [Check_cierre_ruta]
+
+            ), consulta_agrupada AS (
+
+              SELECT
+              	[Centro]
+              	,[Modelo_ruta]
+                  ,[Ruta_preventa]
+                  ,[Solicitante]
+                  ,[Visitado]
+              	,[Anio]
+              	,[Mes]
+              	,[Num_Eq_Cte]
+              	,[Escaneo_refri])
+              	,[Motivo_No_Escaneo]
+                ,ROW_NUMBER() OVER (
+				    PARTITION BY [Solicitante]
+					    ORDER BY [Escaneo_refri] DESC
+			    ) AS rn
+              FROM consulta
+              GROUP BY [Centro], [Modelo_ruta], [Ruta_preventa], [Solicitante], [Visitado], [Anio], [Mes], [Num_Eq_Cte], [Escaneo_refri], [Motivo_No_Escaneo]
+
+            )
+
+            SELECT
+            	[Centro]
+            	,[Modelo_ruta]
+                ,[Ruta_preventa]
+                ,[Solicitante]
+                ,[Visitado]
+            	,(SELECT 
+            	      CONVERT(date, MAX(Fecha_operacion)) AS UltimaFecha
+                  FROM [Comercial].[dbo].[Ind_Op]
+            	  WHERE Tipo_conexion = 'Salesforce Preventa' AND YEAR(Fecha_operacion) = 2025 AND MONTH(Fecha_operacion) = 12
+            	  ) AS [Fecha_operacion]
+            	,[Anio]
+            	,[Mes]
+            	,[Num_Eq_Cte]
+            	,SUM ([Escaneo_refri]) AS [Escaneo_refri]
+            	,[Motivo_No_Escaneo]
+            FROM consulta_agrupada
+            WHERE rn = 1
+            GROUP BY [Centro], [Modelo_ruta], [Ruta_preventa], [Solicitante], [Visitado], [Anio], [Mes], [Num_Eq_Cte], [Motivo_No_Escaneo]
+
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-26 12:06:37,606 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 12:06:37,608 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-26 12:06:37,609 | INFO | Extrayendo información
+2026-01-26 12:06:42,689 | INFO | Aplicando transformación a data
+2026-01-26 12:06:42,738 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 12:06:51,199 | INFO | Proceso finalizado correctamente
+2026-01-26 12:41:56,438 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 12:41:56,440 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-26 12:41:56,441 | INFO | Extrayendo información
+2026-01-26 12:42:04,200 | INFO | Aplicando transformación a data
+2026-01-26 12:42:04,276 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 12:42:11,190 | INFO | Proceso finalizado correctamente
+2026-01-26 12:42:28,790 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 12:42:28,792 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-26 12:42:28,794 | INFO | Extrayendo información
+2026-01-26 12:42:32,399 | INFO | Aplicando transformación a data
+2026-01-26 12:42:32,454 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 12:42:39,314 | INFO | Proceso finalizado correctamente
+2026-01-26 12:44:14,480 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 12:44:14,481 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-26 12:44:14,483 | INFO | Extrayendo información
+2026-01-26 12:44:18,106 | INFO | Aplicando transformación a data
+2026-01-26 12:44:18,166 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 12:44:23,340 | INFO | Proceso finalizado correctamente
+2026-01-26 12:44:40,590 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 12:44:40,596 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-26 12:44:40,597 | INFO | Extrayendo información
+2026-01-26 12:44:45,050 | INFO | Aplicando transformación a data
+2026-01-26 12:44:45,111 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 12:44:50,680 | INFO | Proceso finalizado correctamente
+2026-01-26 12:51:28,599 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 12:51:28,600 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-16 | Procesamiento=Manual
+2026-01-26 12:51:28,602 | INFO | Extrayendo información
+2026-01-26 12:51:55,808 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 12:51:55,819 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-26 12:51:55,820 | INFO | Extrayendo información
+2026-01-26 12:52:06,691 | INFO | Aplicando transformación a data
+2026-01-26 12:52:06,752 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 12:52:12,831 | INFO | Proceso finalizado correctamente
+2026-01-26 12:52:43,042 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 12:52:43,043 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-26 12:52:43,045 | INFO | Extrayendo información
+2026-01-26 12:52:50,467 | INFO | Aplicando transformación a data
+2026-01-26 12:52:50,528 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 12:52:57,532 | INFO | Proceso finalizado correctamente
+2026-01-26 13:23:08,639 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 13:23:08,641 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-26 13:23:08,645 | INFO | Extrayendo información
+2026-01-26 13:23:13,058 | INFO | Aplicando transformación a data
+2026-01-26 13:23:13,113 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 13:23:21,549 | INFO | Proceso finalizado correctamente
+2026-01-26 13:31:13,668 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 13:31:13,670 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-26 13:31:13,671 | INFO | Extrayendo información
+2026-01-26 13:31:18,509 | INFO | Aplicando transformación a data
+2026-01-26 13:31:18,564 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 13:31:25,347 | INFO | Proceso finalizado correctamente
+2026-01-26 13:32:31,008 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 13:32:31,010 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-26 13:32:31,011 | INFO | Extrayendo información
+2026-01-26 13:32:38,871 | INFO | Aplicando transformación a data
+2026-01-26 13:32:38,914 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 13:32:52,139 | INFO | Proceso finalizado correctamente
+2026-01-26 13:33:44,129 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 13:33:44,132 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-26 13:33:44,133 | INFO | Extrayendo información
+2026-01-26 13:33:48,558 | INFO | Aplicando transformación a data
+2026-01-26 13:33:48,599 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 13:33:52,993 | INFO | Proceso finalizado correctamente
+2026-01-26 16:52:38,121 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 16:52:38,124 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-26 16:52:38,126 | INFO | Extrayendo información
+2026-01-26 16:52:47,606 | INFO | Aplicando transformación a data
+2026-01-26 16:52:47,646 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 16:52:51,843 | INFO | Proceso finalizado correctamente
+2026-01-26 16:53:10,094 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 16:53:10,096 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-26 16:53:10,097 | INFO | Extrayendo información
+2026-01-26 16:53:17,617 | INFO | Aplicando transformación a data
+2026-01-26 16:53:17,662 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 16:53:22,320 | INFO | Proceso finalizado correctamente
+2026-01-26 16:59:22,255 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 16:59:22,260 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-26 16:59:22,261 | INFO | Extrayendo información
+2026-01-26 16:59:26,092 | INFO | Aplicando transformación a data
+2026-01-26 16:59:26,154 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 16:59:30,508 | INFO | Proceso finalizado correctamente
+2026-01-26 16:59:40,075 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 16:59:40,076 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-26 16:59:40,077 | INFO | Extrayendo información
+2026-01-26 16:59:44,563 | INFO | Aplicando transformación a data
+2026-01-26 16:59:44,618 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 16:59:49,491 | INFO | Proceso finalizado correctamente
+2026-01-26 17:21:12,388 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 17:21:12,389 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-26 17:21:12,390 | INFO | Extrayendo información
+2026-01-26 17:21:17,265 | INFO | Aplicando transformación a data
+2026-01-26 17:21:17,326 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 17:21:21,932 | INFO | Proceso finalizado correctamente
+2026-01-26 18:33:05,355 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 18:33:05,359 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-26 18:33:05,361 | INFO | Extrayendo información
+2026-01-26 18:33:13,001 | INFO | Aplicando transformación a data
+2026-01-26 18:33:13,061 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 18:33:20,223 | INFO | Proceso finalizado correctamente
+2026-01-26 18:33:51,445 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 18:33:51,447 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-26 18:33:51,448 | INFO | Extrayendo información
+2026-01-26 18:33:55,276 | INFO | Aplicando transformación a data
+2026-01-26 18:33:55,333 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 18:34:01,241 | INFO | Proceso finalizado correctamente
+2026-01-26 18:34:10,606 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 18:34:10,609 | INFO | Parámetros | fecha_inicio=2025-12-15 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-26 18:34:10,611 | INFO | Extrayendo información
+2026-01-26 18:34:15,717 | INFO | Aplicando transformación a data
+2026-01-26 18:34:15,773 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 18:34:22,110 | INFO | Proceso finalizado correctamente
+2026-01-26 18:52:28,486 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 18:52:28,488 | INFO | Parámetros | fecha_inicio=2025-12-01 | fecha_fin=2025-12-15 | Procesamiento=Manual
+2026-01-26 18:52:28,488 | INFO | Extrayendo información
+2026-01-26 18:52:34,189 | INFO | Aplicando transformación a data
+2026-01-26 18:52:34,251 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 18:52:41,352 | INFO | Proceso finalizado correctamente
+2026-01-26 18:52:51,125 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-01-26 18:52:51,127 | INFO | Parámetros | fecha_inicio=2025-12-16 | fecha_fin=2025-12-31 | Procesamiento=Manual
+2026-01-26 18:52:51,128 | INFO | Extrayendo información
+2026-01-26 18:52:58,433 | INFO | Aplicando transformación a data
+2026-01-26 18:52:58,493 | INFO | Cargando información a RDA4-Comercial
+2026-01-26 18:53:05,888 | INFO | Proceso finalizado correctamente

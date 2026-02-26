@@ -1,0 +1,6 @@
+2026-02-23 10:17:08,837 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-02-23 10:17:08,839 | INFO | Parámetros | fecha_inicio=2026-02-16 | fecha_fin=2026-02-22 | Procesamiento=Manual
+2026-02-23 10:17:08,840 | INFO | Extrayendo información
+2026-02-23 10:17:36,631 | INFO | Aplicando transformación a data
+2026-02-23 10:17:36,687 | INFO | Cargando información a RDA4-Comercial
+2026-02-23 10:17:47,698 | INFO | Proceso finalizado correctamente
