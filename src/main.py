@@ -15,7 +15,7 @@ def main():
     logger = logging.getLogger(__name__)
     
     logger.info("Inicio del proceso Ind_Op_Preventa_Escaneo")
-    # Implementacion Runner
+    # Implementacion Runner_ prubea3
 
     alias_servidor_origen = 'DA2-Comercial'
     trusted_connection_origen = True
