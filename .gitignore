@@ -1,0 +1,20 @@
+# Ignorar cualquier archivo .env en cualquier nivel
+**/.env
+**/*.env
+*.env
+
+# Ignorar todos los archivos que terminen en .log
+**/*.log
+
+# Ignorar todos los archivos que terminen en .xlsx
+**/*.xlsx
+
+# Ignorar todos los archivos con extensión .parquet
+**/*.parquet
+
+# Python cache
+**/__pycache__/
+**/*.pyc
+
+# Notebooks
+**/*.ipynb
