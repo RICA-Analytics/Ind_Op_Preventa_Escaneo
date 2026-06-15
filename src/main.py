@@ -1,71 +1,67 @@
 import logging
-from DAToolKit import db, Send_email, EmpDup, ErrorHandler, cron, SQLutils
-
-from regex import D
+from math import ceil
 
 from logging_config import setup_logging
-from extract import get_ind_op_primer_quincena, get_ind_op_segunda_quincena, get_fecha_inicio, get_fecha_fin, get_quincena, get_mes_delete, get_solicitantes_ref_hist
-from transform import definir_quincena, aplicar_orden_columnas, buscar_coincidencias_refri_hist
-from load import load_ind_op
+from extract import *
+from transform import *
+from load import *
+from DAToolKit import db, Send_email, EmpDup, ErrorHandler, cron, cl, SQLutils
 from datetime import datetime
+from pathlib import Path
+import glob
+import os
 
 def main():
     logger = logging.getLogger(__name__)
     
     logger.info("Inicio del proceso Ind_Op_Preventa_Escaneo")
+
+    alias_servidor_origen = 'DA2-Comercial'
+    trusted_connection_origen = True
+
+    alias_servidor_destino = 'DA4-Comercial'
+    trusted_connection_destino = True
+    esquema_destino = 'dbo'
+    # tabla_destino_1 = 'Ind_Op_Prev_Escaneo_Seguimiento'
+    tabla_destino_2 = 'Ind_Op_Prev_Escaneo_Logro'
+
+    anio_manual = 2025
+    mes_abrev_manual = 'Ago'
+    fecha_inicio_manual = '2025-08-01'
+    fecha_fin_manual = '2025-08-31'
+
+    # tipo_procesamiento = 'manual'
+    tipo_procesamiento = 'automatico'
+
+    if tipo_procesamiento == 'manual':
+        anio = anio_manual
+        mes_abrev = mes_abrev_manual
+        fecha_inicio = fecha_inicio_manual
+        fecha_fin = fecha_fin_manual
+    elif tipo_procesamiento == 'automatico':
+        anio, mes_abrev, fecha_inicio, fecha_fin = get_periodo(alias_servidor_origen=alias_servidor_origen, trusted_connection_origen=trusted_connection_origen)
     
     try:
-    
+        
         # variables
-        # tipo_procesamiento = 'Manual'
-        tipo_procesamiento = 'Automatico'
-        fecha_inicio_manual = '2026-02-16'
-        fecha_fin_manual = '2026-02-24'
-
-        if tipo_procesamiento == 'Automatico':
-            fecha_inicio = get_fecha_inicio ()
-            fecha_inicio_formato = datetime.strptime(fecha_inicio,"%Y-%m-%d").date()
-            anio_fin = fecha_inicio_formato.year
-            mes_num_fin = fecha_inicio_formato.month
-            fecha_fin = get_fecha_fin (anio_fin=anio_fin, mes_num_fin=mes_num_fin)
-        else:
-            fecha_inicio = fecha_inicio_manual
-            fecha_fin = fecha_fin_manual
-
-        fecha_fin_formato = datetime.strptime(fecha_fin,"%Y-%m-%d").date()
-        anio = fecha_fin_formato.year
-        mes_num = fecha_fin_formato.month
-
+        fecha = datetime.now()
         
         logger.info(
-            "Parámetros | fecha_inicio=%s | fecha_fin=%s | Procesamiento=%s",
-            fecha_inicio, fecha_fin, tipo_procesamiento
+            "Parámetros | fecha_ejecucion=%s | tipo_procesamiento=%s | anio=%s | mes_abrev=%s | fecha_inicio=%s | fecha_fin=%s",
+            fecha, tipo_procesamiento, anio, mes_abrev, fecha_inicio, fecha_fin
         )
-        
-        # funciones
+
         logger.info("Extrayendo información")
+        # df_seguimiento = get_seguimiento(alias_servidor_origen=alias_servidor_origen, trusted_connection_origen=trusted_connection_origen, fecha_inicio = fecha_inicio, fecha_fin=fecha_fin)
+        df_logro = get_logro(alias_servidor_origen=alias_servidor_origen, trusted_connection_origen=trusted_connection_origen, fecha_inicio = fecha_inicio, fecha_fin=fecha_fin)
 
-        if fecha_fin_formato.day >= 16:
-            print ("Se procesara la segunda quincena")
-            df_ind_op = get_ind_op_segunda_quincena (fecha_inicio=fecha_inicio, fecha_fin=fecha_fin)
-        else:
-            print ("Se procesara la primer quincena")
-            df_ind_op = get_ind_op_primer_quincena (fecha_inicio=fecha_inicio, fecha_fin=fecha_fin)
+        # print(SQLutils.CreateTable(df_seguimiento, 'Ind_Op_Prev_Escaneo_Seguimiento'))
+        # print(SQLutils.CreateTable(df_logro, 'Ind_Op_Prev_Escaneo_Logro'))
         
-        df_refri_hist = get_solicitantes_ref_hist(fecha_inicio=fecha_inicio, fecha_fin=fecha_fin)
-
-        # print(SQLutils.CreateTable(df_ind_op, 'Ind_Op_Preventa_Escaneo'))
-
-        logger.info("Aplicando transformación a data")
-        df_ind_op = definir_quincena(df_ind_op=df_ind_op, campo_fecha='Fecha_operacion')
-        df_ind_op = aplicar_orden_columnas (df_ind_op=df_ind_op) 
-        quincenas_delete = get_quincena (df_ind_op=df_ind_op)
-        mes = get_mes_delete (df_ind_op=df_ind_op)
-        # df_ind_op = buscar_coincidencias_refri_hist (df_ind_op=df_ind_op, df_refri_hist=df_refri_hist)
+        logger.info(f"Cargando información a {alias_servidor_destino}")
+        # load_table(alias_servidor_destino=alias_servidor_destino, trusted_connection_destino=trusted_connection_destino, esquema_destino=esquema_destino, tabla_destino=tabla_destino_1, df=df_seguimiento, anio_delete=anio, mes_delete=mes_abrev )
+        load_table(alias_servidor_destino=alias_servidor_destino, trusted_connection_destino=trusted_connection_destino, esquema_destino=esquema_destino, tabla_destino=tabla_destino_2, df=df_logro, anio_delete=anio, mes_delete=mes_abrev )
         
-        logger.info(f"Cargando información a RDA4-Comercial")
-        load_ind_op(df_ind_op=df_ind_op, anio=anio, mes=mes, quincenas_delete=quincenas_delete)
-
         logger.info("Proceso finalizado correctamente")
         
     except Exception:

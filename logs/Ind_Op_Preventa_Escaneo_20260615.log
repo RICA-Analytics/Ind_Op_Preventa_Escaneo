@@ -1,0 +1,5 @@
+2026-06-15 13:13:10,180 | INFO | Inicio del proceso Ind_Op_Preventa_Escaneo
+2026-06-15 13:13:13,739 | INFO | Parámetros | fecha_ejecucion=2026-06-15 13:13:13.739464 | tipo_procesamiento=automatico | anio=2026 | mes_abrev=Jun | fecha_inicio=2026-06-01 | fecha_fin=2026-06-14
+2026-06-15 13:13:13,746 | INFO | Extrayendo información
+2026-06-15 13:13:18,301 | INFO | Cargando información a DA4-Comercial
+2026-06-15 13:13:24,153 | INFO | Proceso finalizado correctamente
