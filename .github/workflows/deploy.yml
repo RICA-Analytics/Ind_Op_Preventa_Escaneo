@@ -12,6 +12,7 @@ jobs:
     steps:
  
       - name: Actualizar repositorio local
+        uses: actions/checkout@v4
         run: |
           cd E:\Proyectos\RD4\Ind_Op_Preventa_Escaneo
           git config --global --add safe.directory E:\Proyectos\RD4\Ind_Op_Preventa_Escaneo
